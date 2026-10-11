@@ -1,0 +1,26 @@
+{
+  "name": "candidate-service-ui",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@tsconfig/node24": "^24.0.5",
+    "@vue/tsconfig": "^0.9.1",
+    "express": "^4.21.0",
+    "http-proxy-middleware": "^4.2.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "vite": "^8.3.4",
+    "vite-plugin-vue-devtools": "^8.2.1"
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true
+  }
+}
