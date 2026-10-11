@@ -20,8 +20,6 @@ watch(
     Object.assign(form, blank())
     if (candidate) {
       Object.assign(form, candidate)
-      // shallow-copy the nested arrays so editing here never mutates the selected candidate
-      // shown in the detail panel until Save actually round-trips through the API
       form.criteria = (candidate.criteria || []).map((x) => ({ ...x }))
       form.experience = (candidate.experience || []).map((x) => ({ ...x }))
       form.questions = [...(candidate.questions || [])]
